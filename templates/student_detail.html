@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{url_for('static',filename='bootstrap.css')}}" rel="stylesheet" id="bootstrap-css">
+<link href="{{url_for('static',filename='bootstrap.min.css')}}" rel="stylesheet" id="bootstrap-css">
+<script type="text/javascript" src='{{url_for("static",filename="bootstrap.js")}}'></script>
+<script type="text/javascript" src='{{url_for("static",filename="bootstrap.js")}}'></script>
+
+</head>
+<body bgcolor="skyblue" onload="init();">
+    <nav class="container">
+        <div>
+            <a href="/">logout</a>
+        </div>
+    </nav>
+<form method="POST" action="/camera">
+
+    {% if lgin %}
+      <center>  <h1>{{ admin_user }}</h1>
+                <h1>{{ lgin }}</h1>
+      </center>
+    {% else %}
+
+    {% endif %}
+
+  <div class="container">
+    {% if succ_message %}
+      <center>  <h1>{{ succ_message }}</h1>
+     </center>
+    {% else %}
+
+    {% endif %}
+    <center><h1>STUDENT-DETAILS</h1>
+    <p><<<--  STUDENT ENROLLMENT  -->>></p>
+    <hr>
+<label for="Student name"><b> Student Name</b></label><br>
+    <input type="text" placeholder="Enter name" name="s_name" required>
+<br>
+    <label for="Student ID"><b>Student ID</b></label><br>
+    <input type="text" placeholder="Enter Student ID" name="s_id" required>
+
+<br> 
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" placeholder="Enter Email" name="email" required>
+<br> 
+    <label for="DOB"><b>DOB</b></label><br>
+    <input type="text" placeholder="Enter DOB" name="dob" required>
+<br>
+
+    <input type="submit" class="registerbtn"></input>
+  </div>
+</form>
+</center>
+</body>
+</html>
+

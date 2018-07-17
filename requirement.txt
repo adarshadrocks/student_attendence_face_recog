@@ -1,0 +1,31 @@
+
+
+#########Here is the requirement for run the code ###################
+
+
+
+
+need python3 or more version for run
+
+sudo pip3 install flask
+
+#import some keys from flask
+from flask import Flask, request, make_response, render_template,session,redirect,url_for,flash
+
+#install mysql
+sudo apt-get install mysql
+
+#install pymysql
+sudo apt-get install pymysql
+
+
+#install cv2
+pip3 install cv2
+
+#kairos requirement
+make a kairos bussiness id for app_id and app_key
+
+#aws requirement
+create the aws instance and make a user in /var/www/html/image and your user_name
+
+########################################################################################################

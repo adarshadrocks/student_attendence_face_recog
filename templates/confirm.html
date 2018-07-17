@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{url_for('static',filename='bootstrap.css')}}" rel="stylesheet" id="bootstrap-css">
+<link href="{{url_for('static',filename='bootstrap.min.css')}}" rel="stylesheet" id="bootstrap-css">
+<script type="text/javascript" src='{{url_for("static",filename="bootstrap.js")}}'></script>
+<script type="text/javascript" src='{{url_for("static",filename="bootstrap.js")}}'></script>
+</head>
+<body bgcolor="skyblue" onload="init();">
+<form method="POST" action="{{url_for('studentFidding')}}">
+
+  <div class="container">
+
+    <center><h1>STUDENT-DETAILS</h1>
+    <p><<<--  STUDENT ENROLLMENT  -->>></p>
+    <hr>
+    <label for="Student name"><b> Student Name</b></label><br>
+    <input type="text" placeholder="Enter name" id="s_name" name="s_name" value="{{s_name}}" readonly>
+<br>
+    <label for="Student ID"><b>Student ID</b></label><br>
+    <input type="text" placeholder="Enter Student ID" id="s_id" name="s_id" value="{{s_id}}" readonly>
+
+<br> 
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" placeholder="Enter Email" id="email" name="email" value="{{email}}" readonly>
+<br> 
+    <label for="DOB"><b>DOB</b></label><br>
+    <input type="text" placeholder="Enter DOB" id="dob" name="dob" value="{{dob}}" readonly>
+<br><br><br> 
+    <img src="{{image}}" height="100" width="100">
+
+<hr>
+    <input type="submit" class="registerbtn">
+  </div>
+</form>
+</center>
+</body>
+
+</html>
+

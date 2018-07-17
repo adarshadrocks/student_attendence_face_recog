@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+  <center><h1>For Mark Your Attendance</h1><br><br>
+<form method="POST" action="{{url_for('student_recog')}}">
+	<input type="text" name="sname" value={{sname}} readonly>
+	<input type="password" name="spass" value={{spass}} readonly>
+	<input type="submit" name="submit" value="CLICK HERE FOR FACE RECOGNITION">
+</form>
+</center>
+  </body>
+    
+</html>
